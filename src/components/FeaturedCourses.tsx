@@ -51,8 +51,10 @@ function FeaturedCourses() {
                 dark:bg-zinc-700 
                 overflow-hidden h-full max-w-sm"
               >
-                <div className="p-4 sm:p-6 flex flex-col 
-                items-center text-center flex-grow dark:bg-black">
+                <div
+                  className="p-4 sm:p-6 flex flex-col 
+                items-center text-center flex-grow dark:bg-black"
+                >
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                     {course.title}
                   </p>
@@ -60,16 +62,10 @@ function FeaturedCourses() {
                     {course.description}
                   </p>
                   <Link href={`/courses/${course.slug}`} className="mt-4">
-                  <Button
-                      borderRadius="1.75rem"
-                      className="bg-white dark:bg-black text-black 
-              dark:text-white border-neutral-200 font-bold 
-              dark:border-slate-800 hover:dark:text-purple-500 
-              hover:text-purple-500 text-[14px] text-center"
-                    >
+                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                       Learn More
-                    </Button>
-                    </Link>
+                    </button>
+                  </Link>
                 </div>
               </BackgroundGradient>
             </div>
