@@ -3,13 +3,16 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import courseData from "@/data/music_courses.json";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 function page() {
   return (
+    
     <div className="min-h-screen bg-black py-12 pt-36">
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">
         All courses ({courseData.courses.length})
       </h1>
+      <TracingBeam className="px-6">
       <div className="flex flex-wrap justify-center">
         {courseData.courses.map((course) => (
           <CardContainer key={course.id} className="inter-var m-4">
@@ -56,6 +59,7 @@ function page() {
           </CardContainer>
         ))}
       </div>
+    </TracingBeam>
     </div>
   );
 }

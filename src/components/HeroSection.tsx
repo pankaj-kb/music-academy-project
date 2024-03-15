@@ -14,7 +14,7 @@ function HeroSection() {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="purple"
       />
-      <div className="p-4 relative z-10 w-full text-center">
+      <div className="p-6 relative z-10 w-full text-center flex flex-col gap-12">
         <h1
           className="mt-20 md:mt-0 text-4xl md:text-7xl 
         font-bold bg-clip-text text-transparent 
